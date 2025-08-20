@@ -62,7 +62,7 @@ params:
   title: "Tran Chuc Thien profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  # favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -81,34 +81,37 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: false
+    defaultTheme: "dark" # dark
 
   font:
-    fontSize: 1rem # default: 1rem
+    fontSize: 1.2rem # default: 1rem
     fontWeight: 400 # default: 400
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+  color:
+    # Light mode (Chế độ sáng)
+    textColor: "#343a40"             # Chữ chính - Xám đậm
+    secondaryTextColor: "#6c757d"    # Chữ phụ - Xám trung bình
+    textLinkColor: "#007bff"         # Liên kết - Xanh dương tươi
+    backgroundColor: "#f0f8ff"       # Nền chính - Xanh dương rất nhạt
+    secondaryBackgroundColor: "#e9f5ff" # Nền phụ - Xanh dương nhạt
+    primaryColor: "#007bff"          # Màu nhấn chính - Xanh dương tươi
+    secondaryColor: "#ffffff"        # Màu nhấn phụ - Trắng
+
+    # Dark mode (Chế độ tối)
+    darkmode:
+      textColor: "#ffffff"            # Chữ chính - Trắng ngà
+      secondaryTextColor: "#b0b3b8"   # Chữ phụ - Xám nhạt
+      textLinkColor: "#9b59b6"        # Liên kết - Tím đậm
+      backgroundColor: "#000000"      # Nền chính - đen
+      secondaryBackgroundColor: "#212529" # Nền phụ - Xám than
+      primaryColor: "#9b59b6"         # Màu nhấn chính - Tím đậm
+      secondaryColor: "#2c2c2c"       # Màu nhấn phụ - Xám đen
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -117,11 +120,11 @@ params:
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Tran Chuc Thien profile" # Brand name for the brand | default is the title variable
     disableSearch: false
-    # searchPlaceholder: "Search"
+    searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
-    enableSeparator: false
+    enableSeparator: true
     menus:
       disableAbout: false
       disableExperience: false
@@ -134,113 +137,91 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Tran Chuc Thien."
+    title: "Tran Chuc Thien"
     subtitle: "SRE & DevOps Engineer" 
-    content: "A motivated DevOps Engineer with hands-on experience in containerization, CI/CD, cloud infrastructure, and monitoring systems. Skilled in Docker, Kubernetes, AWS, Terraform, and modern observability tools. Passionate about automation, system reliability, and continuously improving cloud-native applications."
-    image: /images/hero.svg
+    # content: "A motivated DevOps Engineer with hands-on experience in containerization, CI/CD, cloud infrastructure, and monitoring systems. Skilled in Docker, Kubernetes, AWS, Terraform, and modern observability tools. Passionate about automation, system reliability, and continuously improving cloud-native applications."
+    content: "I am a DevOps Engineer and recent graduate with a B.S.E in Computer Networks and Data Communications from the University of Information Technology – VNUHCM (July 2025, GPA 9.07/10). I am passionate about automation, cloud-native architectures, and system reliability, with a growing interest in applying DevOps principles to MLOps workflows."
+    image: "/images/me.png"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Download CV"
-      url: "#"
+      url: "https://github.com/TranChucThien/my-portfolio/blob/main/CV-Tran_Chuc_Thien-DevOps.pdf"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/TranChucThien
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/tranchucthien/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
     enable: true
-    title: "About Me"
-    image: "/images/me.png"
+    title: "Skill"
+    image: "/images/skills.jpg"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "Linux, Docker & Kubernetes"
+        - "GitHub Actions, Jenkins & ArgoCD"
+        - "Terraform & AWS"
+        - "Bash & Python"
+        - "Datadog, Prometheus & Grafana"
+        - "MLOps & Machine Learning"
+
+
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        - job: "DevOps Intern"
+          company: "OPSWAT Software Vietnam"
+          companyUrl: "https://www.opswat.com"
+          date: "Mar 2025 - June 2025"
+          featuredLink:
+            enable: true
+            name: "DevOps CloudOps Training Program 2025"
+            url: "https://www.linkedin.com/posts/tranchucthien_im-excited-to-share-that-ive-earned-a-certificate-activity-7355955388476764161-cZ-5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEbmhdMBHSwoJhN47LTxbFoHESIf0djxdfE"
+          content: |
+            Participated in OPSWAT's DevOps CloudOps Training Program 2025.  
+            - Enhanced skills in DevOps and SRE fundamentals, Linux, networking, cloud computing, Docker, Kubernetes, IaC with Terraform, CI/CD, ArgoCD, monitoring and logging with Datadog, Prometheus, and Grafana, and DevSecOps.  
+            - Completed a multi-day assessment at the end of the program.  
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+        - job: "DevOps Software Integration"
+          company: "Bosch Global Software"
+          companyUrl: "https://www.bosch.com"
+          date: "Oct 2024 - Dec 2024"
+          featuredLink:
+            enable: false
+          content: |
+            Participated in a driving assistance project for automobile manufacturers in the Chinese market, focusing on Radar and Camera Sensor systems.  
+            - Managed the development branch and maintained Jenkins pipelines for CI/CT processes.  
+            - Conducted integration testing for each new release and prepared documentation for updated versions.  
+            - Researched and developed internal tools to automate and streamline workflows.  
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+        - job: "DevOps Intern"
+          company: "THD Cybersecurity"
+          companyUrl: "https://thdcybersecurity.com" # nếu bạn muốn có link, còn không thì để trống
+          date: "July 2024 - Sep 2024"
+          featuredLink:
+            enable: false
+          content: |
+            Participated in building a monitoring system for a securities company using Datadog tools.  
+            - Researched configuration methods to collect metrics from PostgreSQL, MongoDB, Keycloak, Centrifugo, Kubernetes components, MetalLB, Go apps, and Node.js apps.  
+            - Researched key metrics of components and contributed to building dashboards and alerts.  
 
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
 
   # Education
   education:
@@ -248,41 +229,24 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Bachelor of Science in Computer Networks and Communications"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "University of Information Technology – VNUHCM"
+          url: "https://www.uit.edu.vn"
+        date: "Sep 2021 – July 2025"
+        GPA: "9.07 out of 10.0"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          Achievements:
+            - Academic Encouragement Scholarship for Excellent Students (2022, 2023, 2024, 2025)
+            - Third Prize – Net Challenge 2023 (Networking & System Administration competition at UIT - VNUHCM)
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          Relevant Coursework:
+            - Computer Networks and Data Communications
+            - Cloud Computing and Virtualization
+            - Network Security and System Administration
         featuredLink:
-          enable: true
+          enable: false
           name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
           url: "https://example.com"
 
   # Achievements
@@ -310,52 +274,63 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: "Enhancing Sentiment Analysis in Brand Monitoring through MLOps"
+        content: Thesis project applying MLOps practices to NLP sentiment analysis models with big data, focused on social media brand monitoring.
+        image: /images/projects/mlops.png
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Source Code
+          link: https://github.com/TranChucThien/kltn-sentiment-monitoring-mlops
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "MLOps"
+          - "Spark NLP"
+          - "MLflow"
+          - "Evidently AI"
+          - "AWS"
+          - "Terraform"
+          - "GitHub Actions"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/TranChucThien/kltn-sentiment-monitoring-mlops
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: "Go CoffeeShop"
+        content: Provisioned, deployed, and operated a microservices-based web application using DevOps practices in both development and production environments.
+        image: /images/projects/coffe.jpg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Source Code
+          link: https://github.com/Chuc-Thien-DevOps-Final-Project
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Microservices"
+          - "Kubernetes"
+          - "AWS"
+          - "Terraform"
+          - "GitHub Actions"
+          - "ArgoCD"
+          - "Datadog"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Chuc-Thien-DevOps-Final-Project
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: "Observability System"
+        content: Designed and deployed an observability system for microservices on Kubernetes using Datadog, Terraform, Jenkins, and security tools.
+        image: /images/projects/datadog.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Source Code
+          link: https://github.com/TranChucThien/NT531.P11-Observability_Systems
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Observability"
+          - "Datadog"
+          - "Kubernetes"
+          - "Terraform"
+          - "Jenkins"
+          - "Helm"
+          - "Trivy"
+          - "Checkov"
+          - "SonarQube"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/TranChucThien/NT531.P11-Observability_Systems
+
 
   #Contact
   contact:
