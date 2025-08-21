@@ -37,11 +37,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -87,7 +87,7 @@ params:
     defaultTheme: "dark" # dark
 
   font:
-    fontSize: 1.2rem # default: 1rem
+    fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
@@ -95,25 +95,25 @@ params:
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
 
-  color:
-    # Light mode (Chế độ sáng)
-    textColor: "#343a40"             # Chữ chính - Xám đậm
-    secondaryTextColor: "#6c757d"    # Chữ phụ - Xám trung bình
-    textLinkColor: "#007bff"         # Liên kết - Xanh dương tươi
-    backgroundColor: "#f0f8ff"       # Nền chính - Xanh dương rất nhạt
-    secondaryBackgroundColor: "#e9f5ff" # Nền phụ - Xanh dương nhạt
-    primaryColor: "#007bff"          # Màu nhấn chính - Xanh dương tươi
-    secondaryColor: "#ffffff"        # Màu nhấn phụ - Trắng
+  # color:
+  #   # Light mode (Chế độ sáng)
+  #   textColor: "#343a40"             # Chữ chính - Xám đậm
+  #   secondaryTextColor: "#6c757d"    # Chữ phụ - Xám trung bình
+  #   textLinkColor: "#007bff"         # Liên kết - Xanh dương tươi
+  #   backgroundColor: "#f0f8ff"       # Nền chính - Xanh dương rất nhạt
+  #   secondaryBackgroundColor: "#e9f5ff" # Nền phụ - Xanh dương nhạt
+  #   primaryColor: "#007bff"          # Màu nhấn chính - Xanh dương tươi
+  #   secondaryColor: "#ffffff"        # Màu nhấn phụ - Trắng
 
-    # Dark mode (Chế độ tối)
-    darkmode:
-      textColor: "#ffffff"            # Chữ chính - Trắng ngà
-      secondaryTextColor: "#b0b3b8"   # Chữ phụ - Xám nhạt
-      textLinkColor: "#9b59b6"        # Liên kết - Tím đậm
-      backgroundColor: "#000000"      # Nền chính - đen
-      secondaryBackgroundColor: "#212529" # Nền phụ - Xám than
-      primaryColor: "#9b59b6"         # Màu nhấn chính - Tím đậm
-      secondaryColor: "#2c2c2c"       # Màu nhấn phụ - Xám đen
+  #   # Dark mode (Chế độ tối)
+  #   darkmode:
+  #     textColor: "#ffffff"            # Chữ chính - Trắng ngà
+  #     secondaryTextColor: "#b0b3b8"   # Chữ phụ - Xám nhạt
+  #     textLinkColor: "#9b59b6"        # Liên kết - Tím đậm
+  #     backgroundColor: "#000000"      # Nền chính - đen
+  #     secondaryBackgroundColor: "#212529" # Nền phụ - Xám than
+  #     primaryColor: "#9b59b6"         # Màu nhấn chính - Tím đậm
+  #     secondaryColor: "#2c2c2c"       # Màu nhấn phụ - Xám đen
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -340,7 +340,7 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:chucthien2@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -356,11 +356,10 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/TranChucThien
+      linkedin: https://linkedin.com/in/tranchucthien
+      instagram: https://instagram.com/tranchucthien
+      facebook: https://www.facebook.com/loveplane.duckweed1609/
 
   # List pages like blogs and posts
   listPages:
@@ -378,12 +377,12 @@ params:
       openInNewTab: true
 
   # For translations
-  terms:
-    read: "Read"
-    toc: "Table Of Contents"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
+  # terms:
+  #   read: "Read"
+  #   toc: "Table Of Contents"
+  #   copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
 
   datesFormat:
     article: "Jan 2, 2006"
