@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://tranchucthien.github.io/my-portfolio/"
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
@@ -393,4 +393,5 @@ params:
 
 caches:
   images:
+
     dir: :cacheDir/images
